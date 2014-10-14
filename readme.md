@@ -9,8 +9,7 @@
 * 安装nodejs
 * 修改*index.js*中端口参数（默认8888）
 
-
-    <code>node index.js<code>
+	node index.js
 
 * 访问[本机8888端口](http://localhost:8888)即可
 
