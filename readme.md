@@ -6,12 +6,9 @@
 * 视频素材存放在/videos/
 
 ## 用法
-* 安装nodejs
-* 修改*index.js*中端口参数（默认8888）
 
 	node index.js
-
-* 访问[本机8888端口](http://localhost:8888)即可
+	visit [localhost:8888](http://localhost:8888)
 
 ## TODO List
 * 使用package.json规范参数
