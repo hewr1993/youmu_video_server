@@ -8,7 +8,7 @@
 ## 用法
 
 	node index.js
-	visit [localhost:8888](http://localhost:8888)
+	visit http://localhost:8888
 
 ## TODO List
 * 使用package.json规范参数
