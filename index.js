@@ -13,7 +13,7 @@ var host = "127.0.0.1", port = "8888";
 var url = "http://" + host + ":" + port + "/";
 
 http.createServer(function(req, res) {
-	var path = "videos/你的名字我的姓氏.mp4";
+	var path = "videos/demo.mp4";
 	var stat = fs.statSync(path);
 	if (req.headers['range']) {
 		var ranges = req.headers.range.replace(/bytes=/, "").split("-");
