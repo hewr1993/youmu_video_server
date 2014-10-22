@@ -15,7 +15,7 @@ var host = "127.0.0.1", port = "8888";
 
 http.createServer(function(req, res) {
 	var video_id = url.parse(req.url).pathname;
-	var path = "video" + video_id + ".mp4";
+	var path = "videos" + video_id + ".mp4";
 	var stat = fs.statSync(path);
 	if (req.headers['range']) {
 		var ranges = req.headers.range.replace(/bytes=/, "").split("-");
