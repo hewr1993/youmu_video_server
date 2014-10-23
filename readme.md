@@ -1,17 +1,17 @@
--![YouMu](http://fmn.xnpic.com/fmn057/20141014/1300/original_Sjs9_4ce10001c578118f.jpg)
+# YouMu Video Server
 - - -
 
-### Front End
-* AngularJS
-* Asynchronous Web Design (AJAX jQuery)
-* Responsive Web Design
-* Self-Implemented Video Player
+## 基于NodeJS暴力视频端
+* 目前先只支持mp4格式，返回同一个视频
+* 视频素材存放在/videos/
 
-### Back End
-* Python
-* Django
-* MongoDB
+## 用法
 
-### Video Server (still working on it)
-* Protocols
-* P2P
+	node index.js
+	visit http://localhost:8888
+
+## TODO List
+* 使用package.json规范参数
+* 用id指定视频
+* 分段传输视频数据
+
