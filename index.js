@@ -10,7 +10,7 @@ var fs = require('fs');
 var util = require('util');
 var url = require("url");
 
-var host = "127.0.0.1", port = "8888";
+var host = "0.0.0.0", port = "8888";
 //var url = "http://" + host + ":" + port + "/";
 
 http.createServer(function(req, res) {
