@@ -11,7 +11,7 @@ var util = require('util');
 var url = require("url");
 
 var host = "0.0.0.0", port = "8888";
-//var url = "http://" + host + ":" + port + "/";
+var hosturl = "http://" + host + ":" + port + "/";
 
 http.createServer(function(req, res) {
 	var video_id = url.parse(req.url).pathname;
@@ -36,4 +36,4 @@ http.createServer(function(req, res) {
 		fs.createReadStream(path).pipe(res);
 	}
 }).listen(port, host);
-console.log("server running at " + url);
+console.log("server running at " + hosturl);
