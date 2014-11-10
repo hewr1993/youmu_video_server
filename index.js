@@ -13,10 +13,12 @@ var request = require("request");
 
 var host = "0.0.0.0", port = "8888";
 var hosturl = "http://" + host + ":" + port + "/";
+var apihost = "http://0.0.0.0:5000";
 
 http.createServer(function(req, res) {
 	var video_id = url.parse(req.url).pathname;
-	api = "http://0.0.0.0:5000/api/video/file" + video_id + "/WAIMAIdi2fen0.5price";
+	//request.post(apihost + "/api/video" + video_id + "/_play", function(error, response, body){});
+	api = apihost + "/api/video/file" + video_id + "/WAIMAIdi2fen0.5price";
 	request(api, function(error, response, body) {
 		var path = "../web/youmu" + body;
 		console.log(path);
